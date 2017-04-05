@@ -1,0 +1,51 @@
+=================
+    OBJECTIVE
+=================
+    Your goal is to move all disks from the leftmost peg to the rightmost one.
+    
+    RULES:
+	    1. Thou shalt move only one disk at a time.
+	    2. Thou shalt only move the topmost disk from each peg
+	    3. Thou shalt not place a bigger disk on top of a smaller disk.
+	    
+	To score higher:
+	    - play with more disks (biggest weight when calculating total score)
+	    - use fewer moves (average weight)
+	    - be quicker (smallest weight)
+
+===================
+    INTERFACE
+===================
+    
+    All input is case-insensitive.
+    
+    MOVING DISKS:
+        To try to move a disk, type a disk number or a peg letter followed by
+        another disk number or a peg letter. Examples:
+            2c - try to move disk 2 onto peg C
+            23 - try to put disk 2 on top of disk 3
+            ab - try to take the top disk from peg A and put it on peg B 
+            a2 - try to take the top disk from peg A and put it on top of disk 2
+
+        If you are brave enough to play with more than 9 disks and want to refer
+	   to a disk with a two-digit number, separate both values with a hyphen:
+            24-c  - try to move disk 24 onto peg C
+            10-11 - try to put disk 10 on top of disk 10
+            c-a   - try to take the top disk from peg C and put it on peg A
+            b-13  - try to take the top disk from peg B and put it on top of
+                    disk 13
+    
+    USING AUTO-SOLVE:
+        If you want to make a move that isn't currently possible and you want
+        the program to do all the steps for you, preceed the command with
+        "solve":
+            solve 5c - do what you need to do move disk 5 to peg C
+        To solve the whole puzzle, type:
+            solve all
+        You will be asked to confirm every movement.
+        Note that if you use the auto-solve feature, your score will not be
+        saved.
+        
+    OTHER COMMANDS:
+        menu - show the main menu (does not lose the current game)
+        exit - leave the program immediately
